@@ -1,0 +1,94 @@
+/* Root colors for consistency */
+:root {
+    --primary-color: #F39323;
+    --secondary-color: #EBDA96;
+    --accent-color: #EA242A;
+}
+
+/* General styling for the main section */
+body {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #333;
+}
+
+/* Card Styling */
+.profile-card {
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease;
+}
+
+/* Header styling */
+.profile-header {
+    color: var(--accent-color);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Form Field Styling */
+.form-control,
+.form-select {
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 0.95rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(243, 147, 35, 0.3);
+}
+
+/* Floating label styling */
+.form-floating label {
+    color: #666;
+    font-size: 0.85rem;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: var(--accent-color);
+    border: none;
+    font-weight: bold;
+    padding: 12px 0;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+    color: #333;
+}
+
+/* Error Message Styling */
+.text-danger {
+    color: #d9534f; /* Classic red for error messages */
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .profile-card {
+        padding: 15px;
+    }
+
+    .profile-header {
+        font-size: 1.3rem;
+    }
+
+    .btn-primary {
+        padding: 10px 0;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

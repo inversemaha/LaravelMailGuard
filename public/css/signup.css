@@ -1,0 +1,52 @@
+/* Background gradient for the main section */
+:root {
+    --primary-color: #F39323;
+    --secondary-color: #EBDA96;
+    --accent-color: #EA242A;
+}
+
+/* Animation for the card */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Card styling */
+.signup-card {
+    animation: fadeIn 0.8s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Header and button styles */
+.signup-header {
+    color: var(--accent-color);
+    font-weight: bold;
+}
+
+.signup-button {
+    background-color: var(--accent-color);
+    border: none;
+    font-weight: bold;
+    width: 100%;
+}
+
+
+
+.signup-button:hover {
+    background-color: var(--primary-color); /* Primary color on hover */
+    color: #333333; /* Slightly darker text color on hover */
+    border-color: var(--accent-color); /* Keep accent border on hover */
+}
+
+/* Accent Color for Signup Page Header */
+.signup-header {
+    color: var(--accent-color); /* Accent color for header */
+    font-weight: bold;
+}

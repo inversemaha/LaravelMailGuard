@@ -1,0 +1,51 @@
+/* Primary, Secondary, and Accent Color Variables */
+:root {
+    --primary-color: #F39323;
+    --secondary-color: #EBDA96;
+    --accent-color: #EA242A;
+}
+
+/* Navigation Styling */
+.navbar-custom {
+    background-color: var(--primary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #000000 !important; /* Black text for contrast */
+    font-weight: bold;
+}
+
+.navbar-custom .nav-link:hover {
+    color: var(--accent-color) !important; /* Accent color on hover */
+}
+
+
+.main-gradient-container {
+    min-height: 90vh;
+    background: linear-gradient(135deg, #f9f9f9, #eaeaea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* Footer Styling */
+.footer-custom {
+    background-color: var(--primary-color); /* Primary color for footer background */
+    color: #000000; /* Black text for contrast */
+    padding: 1rem 0;
+}
+
+.footer-custom a {
+    color: #000000; /* Footer link color */
+    margin: 0 8px;
+    text-decoration: none;
+}
+
+.footer-custom a:hover {
+    color: var(--secondary-color); /* Secondary color on hover */
+}
+
